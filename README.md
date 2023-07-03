@@ -5,15 +5,15 @@ as Winston and Pino.
 
 The main logic of the logger is written in src/main.js . Whenever you use the custom logger, kindly write -
     
-    `const customLogger = require('appventurez_js_custom_logger');`
+    const customLogger = require('appventurez_js_custom_logger');
 
 at the top of your program. You may then use the logger in the following manner - 
     
-    `customLogger({`
-        `logLevel: 'info',`
-        `event: someEvent,`
-        `projectName: 'someProject'`
-    `});`
+    customLogger({
+        logLevel: 'info',
+        event: someEvent,
+        projectName: 'someProject'
+    });
 
 
 The expected paramater is a single object, containing the following properties - 
